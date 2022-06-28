@@ -13,6 +13,8 @@ int main(void)
             array[j] = array[j + 1];
             array[j + 1] = temp;
             j--;
+            if (j < 0)
+                break;
         }
     }
     for (int i = 0; i < 10; i++)
